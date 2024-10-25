@@ -3,13 +3,9 @@ import pandas as pd
 dfeg=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData.csv")
 
 
-dfsa=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData_SA.csv")
-dfnl=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData_NL.csv")
+dfsa=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData_ES.csv")
+dfnl=pd.read_csv("abfss://##@#######.dfs.core.windows.net/PData_JS.csv")
 
-
-dfeg['Region']='Egypt'
-dfsa['Region']='Saudi Arabia'
-dfnl['Region']="Netherlands"
 dfsa.drop(columns=['refresh rate'], inplace=True)
 dfeg.drop(columns=['refresh rate'], inplace=True)
 dfnl.drop(columns=['refresh rate'], inplace=True)
@@ -25,7 +21,7 @@ for i in range(len(db)):
     b[db[i]]=i
 
 s={}
-sb=df['storage']
+sb=df['capacity']
 sb=sb.unique()
 sb
 
@@ -131,7 +127,7 @@ df_cpy['OS'] = df_cpy['os'].map(o)
 df_cpy['Model'] = df_cpy['model'].map(m)
 df_cpy['Cpu'] = df_cpy['cpu'].map(p)
 df_cpy['Color'] = df_cpy['color'].map(c)
-df_cpy['Storage'] = df_cpy['storage'].map(s)
+df_cpy['Capacity'] = df_cpy['capacity'].map(s)
 df_cpy['Website'] = df_cpy['website'].map(w)
 
 df_cpy['Screen Size'] = df_cpy['screen size'].map(scr)
@@ -163,7 +159,7 @@ new_column_names = {
     'Model': 'model_id',
     'Cpu': 'cpu_id',
     'Color': 'color_id',
-    'Storage': 'storage_id',
+    'Capacity': 'capacity_id',
     'Website': 'website_id',
     'Screen Size': 'screen size_id',
     'Wireless Provider': 'wireless provider_id',
