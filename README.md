@@ -1,7 +1,7 @@
 # Data-Engineering-project
 Data Engineering DEPI
 Data engineering is the practice of designing, constructing, and maintaining the systems and architecture that enable the collection, storage, transformation, and retrieval of data for analysis and reporting. It serves as the backbone of data processing workflows, ensuring that data is accurately prepared and accessible for data scientists, analysts, and applications.
-#pipeline
+# pipeline
 pipeline is an organized, automated workflow that enables the efficient movement, transformation, and management of data across various stages, tools, and environments within Azure’s ecosystem. Pipelines are crucial in data engineering, application deployment, and continuous integration/continuous deployment (CI/CD) processes.
 Key Types of Pipelines in Azure
 Azure Data Factory Pipelines: Designed for data integration and transformation, these pipelines help orchestrate and automate data workflows across different data stores and services. They are often used for ETL (Extract, Transform, Load) processes.
