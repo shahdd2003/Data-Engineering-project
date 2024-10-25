@@ -192,10 +192,10 @@ df['website_id'] = df['website_id'].astype(str)
 
 df.columns
 fact=df[['product_id','resolution_id','tech_spec_id','website_id','cellular technology_id','wireless technology_id','wireless provider_id','brand_id', 'os_id', 'model_id', 'cpu_id', 'color_id',
-       'storage_id', 'screen size_id', 'resolution_id2f','price', 'price before promotion', 'rate']]
-product=df[['title', 'brand', 'os', 'ram', 'cpu', 'storage', 'model', 'color','camera', 'img','product_id']]
+       'capacity_id', 'screen size_id', 'resolution_id2f','price']]
+product=df[['title', 'brand', 'os', 'ram', 'cpu', 'storage', 'model', 'color','camera','product_id']]
 reso=df[[ 'width resolution', 'height resolution','screen size','resolution_id']]
-webs=df[[ 'url', 'reviews','region','website','currancy','website_id' ]]
+webs=df[[ 'url','website','currancy','website_id' ]]
 tecsp=df[['wireless technology','wireless provider',
        'cellular technology', 'sim count','tech_spec_id']]
 
